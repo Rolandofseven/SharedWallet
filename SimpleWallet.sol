@@ -4,9 +4,11 @@ contract SimpleWallet {
     
     function withdrawMoney(address payable _to, uint _amount) public {
         _to.transfer(_amount);
+        
     }
     
     function () external payable {
+        
         
     }
 }
